@@ -115,6 +115,7 @@ class MessageInput extends React.Component {
         placeholder="Leave a message"
         style={styles.messageInput}
         value={this.state.text}
+        returnKeyType="send"
       />
     );
   }
