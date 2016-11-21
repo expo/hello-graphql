@@ -5,6 +5,7 @@ import {
   Dimensions,
   KeyboardAvoidingView,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   TextInput,
@@ -63,6 +64,7 @@ class App extends React.Component {
           {messages.map((message, i) => <Text key={i}>{message.text}</Text>)}
         </ScrollView>
 
+
         {
           /**
             * Note: KeyboardAvoidingView won't quite work as expected after fresh npm install
@@ -77,6 +79,7 @@ class App extends React.Component {
         </KeyboardAvoidingView>
 
         <View style={styles.statusBarUnderlay} />
+        <StatusBar barStyle="light-content" />
       </View>
     );
   }
