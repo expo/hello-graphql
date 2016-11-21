@@ -90,7 +90,6 @@ class App extends React.Component {
   }
 `)
 class MessageInput extends React.Component {
-
   state = {
     text: '',
   }
@@ -116,7 +115,6 @@ class MessageInput extends React.Component {
       />
     );
   }
-
 }
 
 const styles = StyleSheet.create({
