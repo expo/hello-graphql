@@ -1,0 +1,17 @@
+{
+  "name": "hello-graphql",
+  "version": "0.0.0",
+  "description": "",
+  "author": "exponent.team@gmail.com",
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "@exponent/vector-icons": "~2.0.3",
+    "apollo-client": "^0.5.6",
+    "exponent": "~11.0.2",
+    "graphql-tag": "^0.1.17",
+    "react": "~15.3.2",
+    "react-apollo": "^0.6.0",
+    "react-native": "git+https://github.com/exponentjs/react-native#sdk-11.0.3"
+  }
+}
