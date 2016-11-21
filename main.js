@@ -56,7 +56,7 @@ class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <ScrollView style={{flex: 1}} contentContainerStyle={{paddingTop: 30, paddingBottom: 50}}>
+        <ScrollView style={{flex: 1}} contentContainerStyle={{paddingTop: 30, paddingBottom: 50, paddingHorizontal: 10}}>
           {messages.map((message, i) => <Text key={i}>{message.text}</Text>)}
         </ScrollView>
 
@@ -132,7 +132,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width,
     borderWidth: 1,
     borderColor: '#eee',
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
   },
   statusBarUnderlay: {
     position: 'absolute',
