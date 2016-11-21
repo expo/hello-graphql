@@ -34,7 +34,7 @@ class AppContainer extends React.Component {
 @graphql(gql`
   query MessagesQuery {
     viewer {
-      allMessages {
+      allMessages(last: 25) {
         nodes {
           text
         }
@@ -56,7 +56,10 @@ class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <ScrollView style={{flex: 1}} contentContainerStyle={{paddingTop: 30, paddingBottom: 50, paddingHorizontal: 10}}>
+        <ScrollView
+          keyboardDismissMode="on-drag"
+          style={{flex: 1}}
+          contentContainerStyle={{paddingTop: 30, paddingBottom: 50, paddingHorizontal: 10}}>
           {messages.map((message, i) => <Text key={i}>{message.text}</Text>)}
         </ScrollView>
 
@@ -128,6 +131,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   messageInput: {
+    backgroundColor: '#fff',
     height: 50,
     width: Dimensions.get('window').width,
     borderWidth: 1,
